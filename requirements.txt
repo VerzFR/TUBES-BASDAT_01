@@ -1,0 +1,6 @@
+asgiref==3.3.4
+Django==3.2
+mysqlclient @ file:///D:/M.Ariefuddin/GitHub/Tubes-Basdat/mysqlclient-1.4.6-cp37-cp37m-win32.whl
+pytz==2021.1
+sqlparse==0.4.1
+typing-extensions==3.10.0.0
