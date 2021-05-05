@@ -15,7 +15,7 @@ class Admin(models.Model):
     password = models.TextField()
 
     class Meta:
-        managed = False
+        #managed = False
         db_table = 'admin'
 
 
@@ -27,7 +27,7 @@ class Barang(models.Model):
     id_user = models.ForeignKey('User', models.DO_NOTHING, db_column='id_user')
 
     class Meta:
-        managed = False
+        #managed = False
         db_table = 'barang'
 
 
@@ -37,7 +37,7 @@ class Laporan(models.Model):
     id_user = models.ForeignKey('User', models.DO_NOTHING, db_column='id_user')
 
     class Meta:
-        managed = False
+        #managed = False
         db_table = 'laporan'
 
 
@@ -47,7 +47,7 @@ class Mahasiswa(models.Model):
     id_prodi = models.ForeignKey('Prodi', models.DO_NOTHING, db_column='id_prodi')
 
     class Meta:
-        managed = False
+        #managed = False
         db_table = 'mahasiswa'
 
 
@@ -56,7 +56,7 @@ class Prodi(models.Model):
     kaprodi = models.CharField(max_length=60)
 
     class Meta:
-        managed = False
+        #managed = False
         db_table = 'prodi'
 
 
@@ -65,7 +65,7 @@ class Staff(models.Model):
     jabatan = models.CharField(max_length=50)
 
     class Meta:
-        managed = False
+        #managed = False
         db_table = 'staff'
 
 
@@ -78,5 +78,5 @@ class User(models.Model):
     role = models.CharField(max_length=10)
 
     class Meta:
-        managed = False
+        #managed = False
         db_table = 'user'
